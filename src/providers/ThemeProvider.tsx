@@ -7,12 +7,12 @@ interface ThemeProviderProp {
 }
 
 const ThemeProvider = ({ children }: ThemeProviderProp) => {
-  const theme = useStore((state) => state.theme);
-  return (
-    <div id="main-container" className={theme}>
-      {children}
-    </div>
-  );
+	const theme = useStore((state) => state.theme);
+	return (
+		<div id="main-container" className={theme}>
+			{children}
+		</div>
+	);
 };
 
 export default ThemeProvider;
