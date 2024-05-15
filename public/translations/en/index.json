@@ -1,0 +1,19 @@
+{
+  "home": {
+    "header": {
+      "items": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "experience": "Experience"
+      }
+    },
+    "content": {
+      "title": "I'm Diego Rojas",
+      "description": "I’m a full stack developer passioned with new tachnologies and create differentes applications",
+      "button": "Contact me",
+      "follow": "Follow me",
+      "whatsappMessage": "Hello Diego, I want to talk with you about a project"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "home": {
+    "header": {
+      "items": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "projects": "Proyectos",
+        "experience": "Experiencia"
+      }
+    },
+    "content": {
+      "title": "Soy Diego Rojas",
+      "description": "Soy un desarrollador fullstack apasionado con las nuevas tecnologias y crear aplicaciones desafiantes",
+      "button": "Contactame",
+      "follow": "Sigueme",
+      "whatsappMessage": "Hola Diego, quiero saber mas sobre tus servicios"
+    }
+  }
+}
