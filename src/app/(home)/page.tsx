@@ -37,7 +37,7 @@ const HomePage = () => {
 			<HeaderHome />
 			<div className="h-screen flex">
 				<div className="w-11/12 m-auto max-w-xl lg:flex lg:max-w-5xl lg:gap-4 lg:items-center xl:gap-10 2xl:max-w-7xl 3xl:max-w-[1500px]">
-					<div className="grid gap-7 lg:w-8/12 lg:gap-10 xl:w-8/12 ">
+					<div className="grid gap-7 lg:w-8/12 lg:gap-10">
 						<h1
 							className="h-full text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text text-center custom-gradient lg:text-left lg:text-[82px] xl:text-[100px]"
 							style={{ lineHeight: "normal" }}
@@ -66,7 +66,7 @@ const HomePage = () => {
 						alt=""
 						width={300}
 						height={300}
-						className="hidden lg:block object-cover w-[420px] h-[420px] rounded-[70px] custom-shadow xl:w-[500px] xl:h-[500px] 2xl:h-[620px] justify-self-end"
+						className="hidden lg:block object-cover w-4/12 h-[420px] rounded-[70px] custom-shadow xl:h-[500px] 2xl:h-[620px] justify-self-end"
 					/>
 				</div>
 			</div>

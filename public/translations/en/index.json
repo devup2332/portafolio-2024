@@ -1,19 +1,19 @@
 {
-  "home": {
-    "header": {
-      "items": {
-        "home": "Home",
-        "about": "About",
-        "projects": "Projects",
-        "experience": "Experience"
-      }
-    },
-    "content": {
-      "title": "I'm Diego Rojas",
-      "description": "I’m a full stack developer passioned with new tachnologies and create differentes applications",
-      "button": "Contact me",
-      "follow": "Follow me",
-      "whatsappMessage": "Hello Diego, I want to talk with you about a project"
-    }
-  }
+	"home": {
+		"header": {
+			"items": {
+				"home": "Home",
+				"about": "About",
+				"projects": "Projects",
+				"experience": "Experience"
+			}
+		},
+		"content": {
+			"title": "I'm Diego Rojas",
+			"description": "Developer with more than three years of experience in the IT industry. Great talent and passion for always being updated on new technologies.",
+			"button": "Contact me",
+			"follow": "Follow me",
+			"whatsappMessage": "Hello Diego, I want to talk with you about a project"
+		}
+	}
 }

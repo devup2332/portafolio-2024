@@ -1,19 +1,19 @@
 {
-  "home": {
-    "header": {
-      "items": {
-        "home": "Inicio",
-        "about": "Acerca de",
-        "projects": "Proyectos",
-        "experience": "Experiencia"
-      }
-    },
-    "content": {
-      "title": "Soy Diego Rojas",
-      "description": "Soy un desarrollador fullstack apasionado con las nuevas tecnologias y crear aplicaciones desafiantes",
-      "button": "Contactame",
-      "follow": "Sigueme",
-      "whatsappMessage": "Hola Diego, quiero saber mas sobre tus servicios"
-    }
-  }
+	"home": {
+		"header": {
+			"items": {
+				"home": "Inicio",
+				"about": "Acerca de",
+				"projects": "Proyectos",
+				"experience": "Experiencia"
+			}
+		},
+		"content": {
+			"title": "Soy Diego Rojas",
+			"description": "Desarrollador con mas de tres anos de experiencia en la industria IT. Gran talento y pasion por estar siempre actualizado en las nuevas tecnologias",
+			"button": "Contactame",
+			"follow": "Sigueme",
+			"whatsappMessage": "Hola Diego, quiero saber mas sobre tus servicios"
+		}
+	}
 }
