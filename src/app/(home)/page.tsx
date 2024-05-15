@@ -4,7 +4,7 @@ import IconGithub from "@/components/atoms/icons/IconGithub";
 import IconLinkeding from "@/components/atoms/icons/IconLinkeding";
 import IconWhatsapp from "@/components/atoms/icons/IconWhatsapp";
 import HeaderHome from "@/components/organism/HeaderHome";
-import { getLinkWhatsapp } from "@/utils/getLinkWhatsapp";
+import useWhatsappLink from "@/hooks/useWhatsappLink";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -14,6 +14,8 @@ const userImage =
 	"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 const HomePage = () => {
+	const { link } = useWhatsappLink();
+	console.log({ link });
 	const { t } = useTranslation();
 	const links = [
 		{
@@ -24,7 +26,7 @@ const HomePage = () => {
 		{
 			Icon: IconWhatsapp,
 			label: "whatsapp",
-			href: getLinkWhatsapp(t("home.content.whatsappMessage")),
+			href: link,
 		},
 		{
 			Icon: IconLinkeding,
