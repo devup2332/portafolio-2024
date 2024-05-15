@@ -66,7 +66,7 @@ const HomePage = () => {
             alt=""
             width={300}
             height={300}
-            className="hidden lg:block object-cover w-[420px] h-[420px] rounded-[70px] custom-shadow xl:w-[500px] xl:h-[650px] justify-self-end"
+            className="hidden lg:block object-cover w-[420px] h-[420px] rounded-[70px] custom-shadow xl:w-[500px] xl:h-[500px] 2xl:h-[620px] justify-self-end"
           />
         </div>
       </div>
