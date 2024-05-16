@@ -47,6 +47,7 @@ const HeaderHome = () => {
 	const pathname = usePathname();
 
 	const setTheme = (theme: "light" | "dark") => {
+		localStorage.setItem("theme", theme);
 		changeTheme(theme);
 	};
 	return (

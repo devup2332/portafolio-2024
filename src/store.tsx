@@ -6,9 +6,11 @@ interface Store {
 	changeTheme: (theme: "dark" | "light") => void;
 }
 
+const theme = localStorage.getItem("theme") as "dark" | "light";
+
 const useStore = create<Store>()((set) => {
 	return {
-		theme: "light",
+		theme: theme ? theme : "light",
 		changeTheme: (theme) => set(() => ({ theme })),
 	};
 });

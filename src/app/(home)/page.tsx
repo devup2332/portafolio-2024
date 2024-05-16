@@ -15,7 +15,6 @@ const userImage =
 
 const HomePage = () => {
 	const { link } = useWhatsappLink();
-	console.log({ link });
 	const { t } = useTranslation();
 	const links = [
 		{
