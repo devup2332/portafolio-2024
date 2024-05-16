@@ -25,6 +25,7 @@ const config = {
 			colors: {
 				"main-bg-color": "var(--primary-bg-color)",
 				"main-text-color": "var(--primary-text-color)",
+				"secondary-color": "#EC8E00",
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
 				ring: "hsl(var(--ring))",

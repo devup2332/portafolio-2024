@@ -35,7 +35,7 @@ const HomePage = () => {
 	];
 	return (
 		<div className="bg-main-bg-color">
-			<HeaderHome />
+			<HeaderHome absolute/>
 			<div className="h-screen flex">
 				<div className="w-11/12 m-auto max-w-xl lg:flex lg:max-w-5xl lg:gap-4 lg:items-center xl:gap-10 2xl:max-w-7xl 3xl:max-w-[1500px]">
 					<div className="grid gap-7 lg:w-8/12 lg:gap-10">
