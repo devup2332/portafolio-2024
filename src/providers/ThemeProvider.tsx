@@ -15,6 +15,7 @@ const ThemeProvider = ({ children }: ThemeProviderProp) => {
 			changeTheme(theme);
 		} else {
 			localStorage.setItem("theme", "light");
+			changeTheme("light");
 		}
 	}, []);
 	if (!theme) return null;
