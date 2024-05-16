@@ -20,8 +20,8 @@ const useWhatsappLink = () => {
 		});
 		let url = isMobile ? "https://wa.me" : "https://web.whatsapp.com/send";
 		const phone = "51976469908";
-		url += isMobile ? `/${phone}` : `?phone=${phone}`;
-		url += `&text=${encodeURIComponent(t("home.content.whatsappMessage"))}`;
+		url += isMobile ? `/${phone}?` : `?phone=${phone}&`;
+		url += `text=${encodeURIComponent(t("home.content.whatsappMessage"))}`;
 		setLink(url);
 	}, []);
 	return { link };
