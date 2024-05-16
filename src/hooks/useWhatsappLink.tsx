@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 const useWhatsappLink = () => {
 	const [link, setLink] = useState("");
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 	useEffect(() => {
 		const toMatch = [
 			/Android/i,
@@ -23,7 +23,7 @@ const useWhatsappLink = () => {
 		url += isMobile ? `/${phone}?` : `?phone=${phone}&`;
 		url += `text=${encodeURIComponent(t("home.content.whatsappMessage"))}`;
 		setLink(url);
-	}, []);
+	}, [i18n.language]);
 	return { link };
 };
 
