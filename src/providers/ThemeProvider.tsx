@@ -7,12 +7,17 @@ interface ThemeProviderProp {
 }
 
 const ThemeProvider = ({ children }: ThemeProviderProp) => {
-	const theme = useStore((state) => state.theme);
+	const { theme, changeTheme } = useStore((state) => state);
 
 	useEffect(() => {
-		const theme = localStorage.getItem("theme");
-		if (!theme) localStorage.setItem("theme", "light");
+		const theme = localStorage.getItem("theme") as "dark" | "light" | undefined;
+		if (theme) {
+			changeTheme(theme);
+		} else {
+			localStorage.setItem("theme", "light");
+		}
 	}, []);
+	if (!theme) return null;
 	return (
 		<div id="main-container" className={theme}>
 			{children}
