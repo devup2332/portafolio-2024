@@ -19,7 +19,9 @@
 	"about": {
 		"content": {
 			"title": "About",
-			"description": "I am a full stack developer from Peru with over 3 years of experience in web development applications. I always tend to implement the best solution I find for each task assigned to me and I always have good communication with my work team"
+			"description": "I am a full stack developer from Peru with over 3 years of experience in web development applications. I always tend to implement the best solution I find for each task assigned to me and I always have good communication with my work team",
+			"follow": "Follow me",
+			"button": "Contact me"
 		}
 	}
 }
