@@ -72,7 +72,7 @@ const ProjectsPage = () => {
 			<HeaderHome fixed />
 
 			<div className="flex lg:justify-center lg:items-center lg:h-screen">
-				<div className="m-auto w-11/12 mt-24 lg:mt-32 lg:grid lg:gap-0 lg:m-0 lg:p-0 lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-[1500px]">
+				<div className="m-auto grid w-11/12 mb-20 mt-24 lg:mt-32 lg:grid gap-10 lg:m-0 lg:p-0 lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-[1500px]">
 					<h1 className="text-3xl font-bold text-secondary-color text-center lg:text-left lg:text-5xl">
 						{t("projects.content.title")}
 					</h1>
