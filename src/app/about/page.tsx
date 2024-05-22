@@ -44,7 +44,7 @@ const AboutPage = () => {
 			<HeaderHome fixed />
 
 			<div className="flex lg:h-screen lg:justify-center lg:items-center">
-				<div className="w-11/12 m-auto lg:h-fit mt-24 max-w-xl mb-20 lg:max-w-5xl lg:flex lg:mt-32 lg:gap-20 2xl:max-w-7xl 2xl:gap-40 3xl:max-w-[1500px]">
+				<div className="w-11/12 m-auto lg:h-fit mt-24 max-w-xl mb-20 lg:max-w-5xl lg:flex lg:mt-32 xl:mt-0 lg:gap-20 2xl:max-w-7xl 2xl:gap-40 3xl:max-w-[1500px]">
 					<div className="grid gap-10 lg:w-6/12">
 						<h1 className="text-3xl font-bold text-secondary-color text-center lg:text-left lg:text-5xl">
 							{t("about.content.title")}
