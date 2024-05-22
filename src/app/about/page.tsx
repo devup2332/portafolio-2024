@@ -41,10 +41,10 @@ const AboutPage = () => {
 	];
 	return (
 		<div className="bg-main-bg-color">
-			<HeaderHome absolute/>
+			<HeaderHome fixed />
 
-			<div className="flex h-screen">
-				<div className="w-11/12 m-auto max-w-xl lg:max-w-5xl lg:flex lg:gap-20 lg:mt-10 2xl:max-w-7xl">
+			<div className="flex lg:h-screen lg:justify-center lg:items-center">
+				<div className="w-11/12 m-auto lg:h-fit mt-24 max-w-xl mb-20 lg:max-w-5xl lg:flex lg:mt-32 lg:gap-20 2xl:max-w-7xl 2xl:gap-40 3xl:max-w-[1500px]">
 					<div className="grid gap-10 lg:w-6/12">
 						<h1 className="text-3xl font-bold text-secondary-color text-center lg:text-left lg:text-5xl">
 							{t("about.content.title")}
@@ -53,7 +53,7 @@ const AboutPage = () => {
 							{t("about.content.description")}
 						</p>
 						<Image
-							className="block object-cover w-full rounded-[20px] lg:h-96 lg:rounded-[70px] 2xl:h-[450px]"
+							className="block object-cover w-full rounded-[20px] lg:h-96 lg:rounded-[70px] 2xl:h-[450px] 3xl:h-[500px]"
 							src={images[0].src}
 							alt=""
 							width={300}
@@ -62,7 +62,7 @@ const AboutPage = () => {
 					</div>
 					<div className="grid gap-10 mt-10 lg:w-6/12 lg:mt-0 lg:h-fit">
 						<Image
-							className="block object-cover w-full rounded-[20px] lg:h-96 lg:rounded-[70px] 2xl:h-[450px]"
+							className="block object-cover w-full rounded-[20px] lg:h-96 lg:rounded-[70px] 2xl:h-[450px] 3xl:h-[500px]"
 							src={images[1].src}
 							alt=""
 							width={300}
@@ -72,7 +72,7 @@ const AboutPage = () => {
 							<p className="text-main-text-color text-center lg:text-left">
 								{t("about.content.follow")}
 							</p>
-							<div className="flex gap-5 items-center">
+							<div className="flex gap-5 items-center justify-center lg:justify-start">
 								{links.map(({ Icon, href }, index) => {
 									return (
 										<Link href={href} key={index} target="_black">

@@ -10,8 +10,7 @@ import Link from "next/link";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const userImage =
-	"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+const userImage = "https://avatars.githubusercontent.com/u/80072843?v=4";
 
 const HomePage = () => {
 	const { link } = useWhatsappLink();
@@ -35,7 +34,7 @@ const HomePage = () => {
 	];
 	return (
 		<div className="bg-main-bg-color">
-			<HeaderHome absolute/>
+			<HeaderHome fixed />
 			<div className="h-screen flex">
 				<div className="w-11/12 m-auto max-w-xl lg:flex lg:max-w-5xl lg:gap-4 lg:items-center xl:gap-10 2xl:max-w-7xl 3xl:max-w-[1500px]">
 					<div className="grid gap-7 lg:w-8/12 lg:gap-10">

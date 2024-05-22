@@ -42,10 +42,11 @@ const links = [
 	},
 ];
 interface HeaderHomeProps {
-	absolute?: boolean;
+	fixed?: boolean;
+	className?: string;
 }
 
-const HeaderHome = ({ absolute = false }: HeaderHomeProps) => {
+const HeaderHome = ({ fixed = false, className = "" }: HeaderHomeProps) => {
 	const { t, i18n } = useTranslation();
 	const { theme, changeTheme } = useStore((state) => state);
 	const pathname = usePathname();
@@ -57,8 +58,9 @@ const HeaderHome = ({ absolute = false }: HeaderHomeProps) => {
 	return (
 		<div
 			className={twMerge(
-				"py-5 text-main-text-color lg:py-10",
-				absolute ? "absolute top-0 lef-0 w-full" : ""
+				"py-5 text-main-text-color lg:py-8 bg-main-bg-color",
+				fixed ? "fixed top-0 lef-0 w-full z-10" : "",
+				className
 			)}
 		>
 			<div className="m-auto w-11/12 flex justify-between items-center max-w-xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-[1500px]">

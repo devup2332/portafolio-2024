@@ -23,5 +23,10 @@
 			"follow": "Follow me",
 			"button": "Contact me"
 		}
+	},
+	"projects": {
+		"content": {
+			"title": "Projects"
+		}
 	}
 }

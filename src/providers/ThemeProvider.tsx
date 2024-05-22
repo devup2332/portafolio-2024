@@ -1,6 +1,7 @@
 "use client";
 import useStore from "@/store";
 import React, { useEffect } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface ThemeProviderProp {
 	children: React.ReactNode;
@@ -20,7 +21,7 @@ const ThemeProvider = ({ children }: ThemeProviderProp) => {
 	}, []);
 	if (!theme) return null;
 	return (
-		<div id="main-container" className={theme}>
+		<div id="main-container" className={twMerge(theme, "bg-main-bg-color")}>
 			{children}
 		</div>
 	);
