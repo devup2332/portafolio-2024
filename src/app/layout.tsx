@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import React from "react";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import "./theme.css";
 import TranslationProvider from "@/providers/TranslationProvider";
 import ThemeProvider from "@/providers/ThemeProvider";
 
@@ -15,11 +16,17 @@ export const metadata: Metadata = {
 export default function RootLayout({
 	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={montserrat.className}>
+		<html
+			lang="en"
+			className={montserrat.className}
+			style={{
+				colorScheme: "light dark",
+			}}
+		>
+			<body className="bg-main-bg-color">
 				<TranslationProvider>
 					<ThemeProvider>{children}</ThemeProvider>
 				</TranslationProvider>

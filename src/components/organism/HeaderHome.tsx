@@ -42,11 +42,11 @@ const links = [
 	},
 ];
 interface HeaderHomeProps {
-	fixed?: boolean;
+	float?: boolean;
 	className?: string;
 }
 
-const HeaderHome = ({ fixed = false, className = "" }: HeaderHomeProps) => {
+const HeaderHome = ({ float = false, className = "" }: HeaderHomeProps) => {
 	const { t, i18n } = useTranslation();
 	const { theme, changeTheme } = useStore((state) => state);
 	const pathname = usePathname();
@@ -58,12 +58,12 @@ const HeaderHome = ({ fixed = false, className = "" }: HeaderHomeProps) => {
 	return (
 		<div
 			className={twMerge(
-				"py-5 text-main-text-color lg:py-8 bg-main-bg-color",
-				fixed ? "fixed top-0 lef-0 w-full z-10" : "",
+				"py-5 text-main-text-color lg:py-8 bg-main-bg-color shadow-sm ",
+				float ? "sticky top-0 lef-0 w-full z-10" : "",
 				className
 			)}
 		>
-			<div className="m-auto w-11/12 flex justify-between items-center max-w-xl lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-[1500px]">
+			<div className="m-auto w-9/12 flex justify-between items-center max-w-md lg:max-w-5xl 2xl:max-w-7xl 3xl:max-w-[1500px]">
 				<Link href="/">
 					<MainLogo />
 				</Link>

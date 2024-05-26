@@ -1,0 +1,21 @@
+:root {
+	--light-primary-bg-color: #ffffff;
+	--light-primary-text-color: #000000;
+	--light-secondary-bg-color: #F2F7FF;
+
+	--dark-primary-bg-color: #0D0D0E;
+	--dark-primary-text-color: #ffffff;
+	--dark-secondary-bg-color: #252525;
+}
+
+html.light {
+	--primary-bg-color: var(--light-primary-bg-color);
+	--primary-text-color: var(--light-primary-text-color);
+	--secondary-bg-color: var(--light-secondary-bg-color);
+}
+
+html.dark {
+	--primary-bg-color: var(--dark-primary-bg-color);
+	--primary-text-color: var(--dark-primary-text-color);
+	--secondary-bg-color: var(--dark-secondary-bg-color);
+}

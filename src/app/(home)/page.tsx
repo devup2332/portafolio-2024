@@ -33,42 +33,40 @@ const HomePage = () => {
 		},
 	];
 	return (
-		<div className="bg-main-bg-color">
-			<HeaderHome fixed />
-			<div className="h-screen flex">
-				<div className="w-11/12 m-auto max-w-xl lg:flex lg:max-w-5xl lg:gap-4 lg:items-center xl:gap-10 2xl:max-w-7xl 3xl:max-w-[1500px]">
-					<div className="grid gap-7 lg:w-8/12 lg:gap-10">
-						<h1
-							className="h-full text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text text-center custom-gradient lg:text-left lg:text-[82px] xl:text-[100px]"
-							style={{ lineHeight: "normal" }}
-						>
-							{t("home.content.title")}
-						</h1>
-						<p className="text-center leading-8 text-main-text-color lg:text-left lg:font-semibold lg:w-8/12 xl:w-6/12">
-							{t("home.content.description")}
-						</p>
-						<MainButton className="justify-self-center lg:justify-self-start">
-							{t("home.content.button")}
-						</MainButton>
-						<div className="flex gap-3 justify-center items-center text-main-text-color lg:justify-start">
-							<p>{t("home.content.follow")}</p>
-							{links.map(({ Icon, href }, index) => {
-								return (
-									<Link href={href} key={index} target="_black">
-										<Icon className="h-6 w-6 text-main-text-color fill-current" />
-									</Link>
-								);
-							})}
-						</div>
+		<div>
+			<HeaderHome float />
+			<div className="w-9/12 m-auto max-w-md my-14 lg:my-20 lg:grid lg:grid-cols-2 lg:max-w-5xl lg:gap-0 lg:items-center 2xl:max-w-7xl 2xl:my-32 3xl:max-w-[1500px]">
+				<div className="grid gap-7 lg:gap-10">
+					<h1
+						className="h-full text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text text-center custom-gradient lg:text-left lg:text-[82px] xl:text-[100px]"
+						style={{ lineHeight: "normal" }}
+					>
+						{t("home.content.title")}
+					</h1>
+					<p className="text-center leading-8 text-main-text-color lg:text-left lg:font-semibold xl:w-9/12">
+						{t("home.content.description")}
+					</p>
+					<MainButton className="justify-self-center lg:justify-self-start">
+						{t("home.content.button")}
+					</MainButton>
+					<div className="flex gap-3 justify-center items-center text-main-text-color lg:justify-start">
+						<p>{t("home.content.follow")}</p>
+						{links.map(({ Icon, href }, index) => {
+							return (
+								<Link href={href} key={index} target="_black">
+									<Icon className="h-6 w-6 text-main-text-color fill-current" />
+								</Link>
+							);
+						})}
 					</div>
-					<Image
-						src={userImage}
-						alt=""
-						width={300}
-						height={300}
-						className="hidden lg:block object-cover w-4/12 h-[420px] rounded-[70px] custom-shadow xl:h-[500px] 2xl:h-[620px] justify-self-end"
-					/>
 				</div>
+				<Image
+					src={userImage}
+					alt=""
+					width={300}
+					height={300}
+					className="hidden lg:block object-cover w-9/12 h-[420px] rounded-[70px] custom-shadow xl:h-[500px] max-w-[450px] justify-self-end"
+				/>
 			</div>
 		</div>
 	);

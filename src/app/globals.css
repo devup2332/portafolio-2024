@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @layer base {
 	:root {
@@ -74,29 +74,6 @@
 		@apply bg-background text-foreground;
 	}
 }
-
-:root {
-	--dark-bg-main: #0d0d0f;
-	--dark-text-color: #ffffff;
-	--dark-bg-secondary: #252525;
-
-	--light-bg-main: #ffffff;
-	--light-text-color: #000000;
-	--light-bg-secondary: #f2f7ff;
-}
-
-#main-container.light {
-	--primary-bg-color: var(--light-bg-main);
-	--primary-text-color: var(--light-text-color);
-	--secondary-bg-color: var(--light-bg-secondary);
-}
-
-#main-container.dark {
-	--primary-bg-color: var(--dark-bg-main);
-	--primary-text-color: var(--dark-text-color);
-	--secondary-bg-color: var(--dark-bg-secondary);
-}
-
 
 .custom-underline {
 	&::after {

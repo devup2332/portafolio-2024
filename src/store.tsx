@@ -6,10 +6,19 @@ interface Store {
 	changeTheme: (theme: "dark" | "light") => void;
 }
 
-const useStore = create<Store>()((set) => {
+const useStore = create<Store>((set) => {
 	return {
 		theme: undefined,
-		changeTheme: (theme) => set(() => ({ theme })),
+		changeTheme: (theme) =>
+			set(() => {
+				const page = document.querySelector("html");
+				if (page) {
+					page.classList.remove("dark", "light");
+					page.classList.add(theme);
+					page.style.colorScheme = theme;
+				}
+				return { theme };
+			}),
 	};
 });
 
