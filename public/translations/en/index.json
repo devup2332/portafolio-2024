@@ -28,5 +28,10 @@
 		"content": {
 			"title": "Projects"
 		}
+	},
+	"experience": {
+		"content": {
+			"title": "Experience"
+		}
 	}
 }

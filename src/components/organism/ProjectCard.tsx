@@ -18,10 +18,10 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ item }: ProjectCardProps) => {
 	return (
-		<div className="p-10 bg-secondary-bg-color rounded-xl grid gap-7">
+		<div className="p-10 bg-secondary-bg-color rounded-xl grid gap-7 hover:shadow-md transition-shadow">
 			<div className="flex justify-between">
 				<h1 className="font-bold text-lg text-main-text-color">{item.title}</h1>
-				<div className="flex gap-5 items-center">
+				<div className="flex gap-5 items-center ">
 					{item.links.map((link, index) => {
 						return (
 							<Link href={link.href} key={index}>

@@ -43,9 +43,9 @@ const AboutPage = () => {
 		<div className="bg-main-bg-color">
 			<HeaderHome float />
 
-			<div className="w-9/12 m-auto mt-14 max-w-md lg:h-fit mb-20 lg:max-w-5xl lg:flex lg:my-20 lg:gap-20 2xl:max-w-7xl 2xl:gap-40 2xl:my-24 3xl:max-w-[1500px]">
+			<div className="w-9/12 m-auto my-14 max-w-md lg:h-fit lg:max-w-5xl lg:flex lg:my-20 lg:gap-20 2xl:max-w-7xl 2xl:gap-40 3xl:max-w-[1500px]">
 				<div className="grid gap-10 lg:w-6/12">
-					<h1 className="text-5xl font-bold text-secondary-color text-center lg:text-left lg:text-5xl">
+					<h1 className="text-4xl font-bold text-secondary-color text-center lg:text-left lg:text-5xl">
 						{t("about.content.title")}
 					</h1>
 					<p className="text-main-text-color text-center leading-7 lg:text-left lg:leading-8">
@@ -80,7 +80,13 @@ const AboutPage = () => {
 								);
 							})}
 						</div>
-						<MainButton>{t("about.content.button")}</MainButton>
+						<MainButton
+							onClick={() => {
+								window.open(link, "_blank");
+							}}
+						>
+							{t("about.content.button")}
+						</MainButton>
 					</div>
 				</div>
 			</div>

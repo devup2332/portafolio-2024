@@ -1,13 +1,12 @@
 import React from "react";
-import { Button } from "../ui/button";
+import { Button, ButtonProps } from "../ui/button";
 import { clsx } from "clsx";
 
-interface MainButtonProps {
+interface MainButtonProps extends ButtonProps {
 	children: React.ReactNode;
-	className?: string;
 }
 
-const MainButton = ({ children, className }: MainButtonProps) => {
+const MainButton = ({ children, className, ...props }: MainButtonProps) => {
 	return (
 		<Button
 			className={clsx(
@@ -15,6 +14,7 @@ const MainButton = ({ children, className }: MainButtonProps) => {
 				"hover:bg-gray-200 transition-colors hover:text-black",
 				className
 			)}
+			{...props}
 		>
 			{children}
 		</Button>

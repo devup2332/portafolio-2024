@@ -28,5 +28,10 @@
 		"content": {
 			"title": "Proyectos"
 		}
+	},
+	"experience": {
+		"content": {
+			"title": "Experiencia"
+		}
 	}
 }

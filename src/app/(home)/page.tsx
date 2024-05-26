@@ -46,7 +46,12 @@ const HomePage = () => {
 					<p className="text-center leading-8 text-main-text-color lg:text-left lg:font-semibold xl:w-9/12">
 						{t("home.content.description")}
 					</p>
-					<MainButton className="justify-self-center lg:justify-self-start">
+					<MainButton
+						className="justify-self-center lg:justify-self-start"
+						onClick={() => {
+							window?.open(link, "_blank");
+						}}
+					>
 						{t("home.content.button")}
 					</MainButton>
 					<div className="flex gap-3 justify-center items-center text-main-text-color lg:justify-start">
